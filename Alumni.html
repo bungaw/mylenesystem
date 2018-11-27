@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <title>SHFSHS Alumni Homecoming 2018</title>
+<?php
+     if(){
+	      $firstName = $_GET ['fn'];
+		  $lastName =$_GET ['n'];
+		  $email = $_GET ['email'];
+		  $regdate =$_GET ['rd'];
+		  
+		  
+		  $conn = new mysqli('localhost','root','qwerty',Alumni Homecoming);
+		  
+		  if($conn->connect_error){
+		     echo "database connection failed!";
+			   
+		  }else{
+		      
+		  
+		  }
+		  
+		  
+		  echo "<h2>Welcome $firstName $lastName $email $regdate"    
+	 
+	 }
+    <body>
+        <h1>SHFSHS Alumni Homecoming 2018</h1>
+        <h2>REGISTRATION PAGE</H2>
+		
+        <form action="<?php $_PHP_SELF	?>" method ="get">
+		     <p>First Name:<br><input type="text" name="fn"/></p>
+		     <p>Last Name:<br><input type="text" name="ln"/></p>
+             <p> Email:<input type ="type" name ="email"/></p>
+			 <p>Registration Date<input ="type"name ="rd" /></p>
+			 <input style="background-color: #81613c" type = "Registration"/></p>
+			  
+			  
+			  
+		</form>		
+		
+		</body>
+		
+	</html>
